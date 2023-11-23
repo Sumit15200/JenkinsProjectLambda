@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Git Repository') {
             steps {
-                    git 'https://github.com/Sumit15200/JenkinsProjectLambda'
+                    // git 'https://github.com/Sumit15200/JenkinsProjectLambda'
                   }
         }
 
