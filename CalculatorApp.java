@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-class Main {
+
+class CalculatorApp {
   public static void main(String[] args) {
 
     char operator;
