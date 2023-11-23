@@ -5,8 +5,8 @@ pipeline {
 
         stage('Clone Git Repository') {
             steps{
-                   sh 'echo "Hi Sumit"'
-                    // git 'https://github.com/Sumit15200/JenkinsProjectLambda'
+                   sh 'echo "Hi Sumit, Cloning git project here"'
+                   git 'https://github.com/Sumit15200/JenkinsProjectLambda'
                   }
         }
 
