@@ -13,7 +13,7 @@ pipeline {
 
          stage('Building Image') {
              when {
-                     changeset "app/**/*"
+                     changeset "**/CalculatorApp.java"
              }
             steps {
                     script {
