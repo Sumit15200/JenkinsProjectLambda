@@ -10,6 +10,7 @@ class Main {
     Scanner input = new Scanner(System.in);
 
     // ask users to enter operator
+    System.out.println("Welcome in Super Calculator");
     System.out.println("Choose an operator: +, -, *, or /");
     operator = input.next().charAt(0);
 
