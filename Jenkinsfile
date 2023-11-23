@@ -18,7 +18,7 @@ pipeline {
             steps {
                     script {
                                  sh 'echo "Hi Sumit, Bulding the docker Image here"'
-                                 dockerImage = docker.build("\${CalculatorApp}:${lite}", "-f Dockerfile .")
+                                 dockerImage = docker.build("${IMAGE_REPO_NAME}:${IMAGE_TAG}", "-f Dockerfile .")
                              }
              }
          }
