@@ -11,7 +11,7 @@ class CalculatorApp {
     Scanner input = new Scanner(System.in);
 
     // ask users to enter operator
-    System.out.println("Welcome in CalculatorAPP ");
+    System.out.println("Welcome in Calculator ");
     System.out.println("Choose an operator: +, -, *, or /");
     operator = input.next().charAt(0);
 
