@@ -6,20 +6,21 @@ pipeline {
         stage('Clone Git Repository') {
             steps{
                    sh 'echo "Hi Sumit, Cloning git project here"'
-                   git 'https://github.com/Sumit15200/JenkinsProjectLambda'
+                //    git 'https://github.com/Sumit15200/JenkinsProjectLambda'
                   }
         }
 
-        // stage('Building Image') {
-        //     when {
-        //             changeset "app/**/*"
-        //     }
-        //     steps {
-        //             script {
-        //                         dockerImage = docker.build("${Calculator}:${lite}", "-f Dockerfile .")
-        //                     }
-        //     }
-        // }
+         stage('Building Image') {
+             when {
+                     changeset "app/**/*"
+             }
+            steps {
+                    script {
+                                 sh 'echo "Hi Sumit, Bulding the docker Image here"'
+                                 dockerImage = docker.build("${Calculator}:${lite}", "-f Dockerfile .")
+                             }
+             }
+         }
 
 
         // stage('Push to ECR') {
