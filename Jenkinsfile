@@ -7,6 +7,7 @@ pipeline {
             steps{
                    sh 'echo "Hi Sumit, Cloning git project here"'
                 //    git 'https://github.com/Sumit15200/JenkinsProjectLambda'
+                  git branch: 'main', url: 'https://github.com/Sumit15200/JenkinsProjectLambda'
                   }
         }
 
