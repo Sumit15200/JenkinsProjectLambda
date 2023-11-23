@@ -1,4 +1,4 @@
-FROM jenkins/inbound-agent
+FROM openjdk
 WORKDIR /app
 COPY ./app
 RUN  javac CalculatorApp.java
